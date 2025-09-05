@@ -1,0 +1,200 @@
+.chiller-detail-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.chiller-diagram {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.chiller-system {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Compressor */
+.compressor {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.compressor-body {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 30px 30px, #444, #000);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.compressor-blades {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #888, #555);
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: spin 3s linear infinite;
+  clip-path: polygon(50% 0%, 60% 30%, 100% 50%, 60% 70%, 50% 100%, 40% 70%, 0% 50%, 40% 30%);
+}
+
+@keyframes spin {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Cooling Coil */
+.cooling-coil-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cooling-coil {
+  width: 60px;
+  height: 80px;
+  background: linear-gradient(to bottom, #33f, #33a);
+  border-radius: 5px;
+  animation: cool-coil 4s ease-in-out infinite;
+}
+
+@keyframes cool-coil {
+  0%, 100% {
+    background: linear-gradient(to bottom, #33f, #33a);
+  }
+  50% {
+    background: linear-gradient(to bottom, #a3d, #33f);
+  }
+}
+
+/* Condenser */
+.condenser-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.condenser {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff8, #f44);
+  animation: heat-exchange 5s ease-in-out infinite;
+}
+
+@keyframes heat-exchange {
+  0%, 100% {
+    background: radial-gradient(circle, #ff8, #f44);
+  }
+  50% {
+    background: radial-gradient(circle, #ff8, #f77);
+  }
+}
+
+/* Piping System */
+.piping-system {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pipe {
+  width: 150px;
+  height: 20px;
+  background: #555;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.flow {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #00f, #0af, #00f);
+  animation: flow 2s infinite linear;
+}
+
+@keyframes flow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Pressure Gauge */
+.gauge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gauge-display {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid #333;
+  background: radial-gradient(circle, #eee, #ddd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #222;
+}
+
+/* Mini Cards */
+.mini-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.mini-card {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Error Section */
+.error-section {
+  background-color: #f88;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+}
+
+.toggle-error {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #333;
+}

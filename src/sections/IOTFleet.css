@@ -1,0 +1,77 @@
+.iot-fleet-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .top-node {
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: #4caf50; /* Green color for top node */
+  }
+  
+  .child-nodes {
+    display: flex;
+    justify-content: center; /* Center child nodes */
+    width: 100%;
+    margin-top: 20px; /* Space above child nodes */
+  }
+  
+  .child-node-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align children */
+    margin: 0 15px; /* Space around each child node container */
+  }
+  
+  .child-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+    position: relative; /* Needed for positioning connecting lines */
+    background-color: #f1f1f1; /* Background color for child node cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  .active {
+    background-color: #4caf50; /* Green for active nodes */
+  }
+  
+  .warning {
+    background-color: #ff9800; /* Yellow for warning nodes */
+  }
+  
+  .offline {
+    background-color: #f44336; /* Red for offline nodes */
+  }
+  
+  .grandchild-nodes {
+    display: flex;
+    justify-content: center; /* Center grandchild nodes */
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .grandchild-node {
+    width: 70px;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px; /* Space between grandchild nodes */
+    color: black;
+    text-align: center;
+    background-color: #e0e0e0; /* Background color for grandchild nodes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  

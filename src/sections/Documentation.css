@@ -1,0 +1,28 @@
+.documentation-section {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .compartment {
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .file-upload {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .file-list {
+    margin-top: 0.5rem;
+  }
+  
+  .file-list p {
+    margin: 0.25rem 0;
+    color: #374151;
+  }
+  

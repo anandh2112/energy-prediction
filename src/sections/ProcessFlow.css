@@ -1,0 +1,30 @@
+/* src/processFlowStyles.css */
+.process-flow-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .process-flow-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .react-flow__node {
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .react-flow__minimap {
+    background-color: #f0f0f0;
+  }
+  
+  .react-flow__background {
+    stroke: #d1d1d1;
+  }
+  

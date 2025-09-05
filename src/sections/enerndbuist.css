@@ -1,0 +1,42 @@
+@keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
+  }
+  
+  @keyframes grow {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .animate-grow {
+    animation: grow 2s ease-out forwards;
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 15px rgba(0, 255, 0, 1);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+    }
+  }
+  
+  .animate-glow {
+    animation: glow 2s infinite;
+  }
+  
